@@ -6,10 +6,11 @@ void backButton(methodPtr ptrMethod){
     char c;
     scanf("%c",&c);
     if(c == 'B'){
-
-        ptrMethod();
-
+        goBack(ptrMethod);
     }
+}
+void goBack(methodPtr ptrPreviousMethod){
+    ptrPreviousMethod();
 }
 void displayGreeting(){
     printf("Welcome to Monopoly!\n");

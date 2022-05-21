@@ -5,13 +5,9 @@ Last modified: January 6, 2021
 Version: 1.0 
 [Acknowledgements: Geekhacks.org 
 */
-#include "libs/UIHelpers.c"
-#include "libs/inputHelpers.c"
-
+#include "libs/gameEventHandlers.h"
+#include <stdio.h>
 #define ARRAY_SIZE(arr) sizeof(arr)/sizeof(arr[0]) 
-void starGame(){
-
-}
 int main()
 {
     char cLoopPrompt = 'N';

@@ -2,7 +2,8 @@
 This is a library of functions used for input handling
 Written by: Aaron Gumapac
 */
-#include "numericalOperations.c"
+#include "inputHelpers.h"
+#include "numericalOperations.h"
 char capitalizeChar(char c){
     if(!checkIfInRange(c,97,122)){
         if(checkIfInRange(c,65,90))
@@ -27,9 +28,4 @@ char handleInput(char validInputs[], int nElements){
         return cNormalizedInput;
     }
     return handleInput(validInputs,nElements);
-}
-int handleInteger(){
-    int validInt = NULL;
-    scanf("%d",&validInt);
-    if(validInt )
 }
